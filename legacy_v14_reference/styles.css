@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--navy:#142238;--navy2:#20344b;--gold:#bb9556;--gold-light:#e8cf99;--paper:#f7f2e8;--cream:#fffdf8;--ink:#1d2c3a;--muted:#65707b;--line:#dfd5c4;--sage:#526d5d}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.app-shell{max-width:980px;min-height:100vh;margin:auto;background:var(--cream);box-shadow:0 0 70px #18273b14}.masthead{display:flex;align-items:center;gap:16px;background:var(--navy);color:#fff;padding:20px clamp(18px,5vw,42px);border-bottom:2px solid var(--gold)}.brandmark{display:grid;place-items:center;width:49px;height:49px;border:1px solid var(--gold);color:var(--gold-light);font-size:28px;border-radius:50%}.masthead h1{font:600 clamp(27px,4vw,37px)/1 'Cormorant Garamond',Georgia,serif;margin:2px 0}.masthead h1 em{font-style:normal;color:var(--gold-light);font-size:.57em;letter-spacing:.15em}.eyebrow,.section-kicker,.panel-label{font-size:10px;font-weight:700;letter-spacing:.24em;color:var(--gold-light)}.motto{font:italic 15px 'Cormorant Garamond',Georgia,serif;color:#dfd4c0}.version{margin-left:auto;font-size:10px;color:#9daabb;align-self:flex-start}.tabs{display:grid;grid-template-columns:repeat(3,1fr);background:#192a40;padding:0 18px}.tab{border:0;border-bottom:3px solid transparent;background:transparent;color:#bdc5ce;padding:14px 10px;font-weight:600;letter-spacing:.06em}.tab.active{border-bottom-color:var(--gold-light);color:#fff;background:#ffffff0a}.tab span{margin-left:5px}.view{display:none}.view.active{display:block}main{min-height:60vh}.prayer-sanctuary{min-height:740px;background:linear-gradient(180deg,#0d192bb5,#0d192be6 58%,#0d192bf2),url('assets/christ-icon.svg') center 18%/min(100%,700px) auto no-repeat,#19283a;color:#fff;position:relative;text-align:center}.sanctuary-overlay{padding:45px clamp(18px,5vw,60px) 65px;max-width:780px;margin:auto}.prayer-sanctuary h2,.page-intro h2{font:500 clamp(42px,8vw,72px)/.97 'Cormorant Garamond',Georgia,serif;margin:17px 0 14px}.prayer-sanctuary h2 i{color:var(--gold-light);font-weight:500}.rule{color:var(--gold-light);font-size:25px}.prayer-subtitle{color:#eee3d0;max-width:440px;margin:8px auto 24px;font-size:14px}.prayer-clock{font:500 clamp(66px,13vw,105px)/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.035em;font-variant-numeric:tabular-nums;text-shadow:0 2px 24px #0009}.prayer-progress,.timer-track{height:5px;border-radius:10px;background:#ffffff2a;overflow:hidden;max-width:400px;margin:15px auto 22px}.prayer-progress>div,.timer-track>div{height:100%;width:0;background:var(--gold-light);transition:width .25s}.prayer-stage{font-size:11px;font-weight:700;letter-spacing:.23em;color:var(--gold-light);margin-bottom:12px}.prayer-card{background:#142238d9;border:1px solid #d3b77a65;border-radius:3px;max-width:630px;min-height:250px;margin:0 auto 22px;padding:24px clamp(17px,4vw,37px);box-shadow:0 16px 50px #0004}.prayer-source{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold-light)}.prayer-text{font:500 clamp(21px,3vw,28px)/1.33 'Cormorant Garamond',Georgia,serif;white-space:pre-line;margin:16px 0}.prayer-reference{font-size:12px;color:#d4c8b3}.button-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.prayer-sanctuary .button-row{justify-content:center}.btn{border:1px solid transparent;border-radius:4px;padding:12px 20px;font-weight:700;font-size:13px;min-height:45px;transition:transform .15s,background .15s}.btn:active{transform:scale(.98)}.btn.gold{background:var(--gold-light);color:#1b2633}.btn.outline-light{background:transparent;color:#fff;border-color:#e8cf9980}.btn.primary{background:var(--navy);color:white}.btn.secondary{background:#e9dfcd;color:var(--ink)}.btn.subtle{background:#f7f3eb;border-color:var(--line);color:var(--ink)}.btn.full{width:100%;display:flex;justify-content:space-between;margin-top:20px}.toggle-light,.small-light{display:block;color:#ddd2c1;font-size:12px;margin:18px auto 0}.toggle-light input{accent-color:var(--gold)}.small-light{max-width:500px;opacity:.7}.page-intro{padding:40px clamp(20px,5vw,45px) 18px}.section-kicker.dark{color:#8c6c39}.page-intro h2{color:var(--navy);margin:8px 0}.page-intro h2 i{color:#99713a}.page-intro>p{color:var(--muted);font-size:14px;max-width:570px}.panel{margin:18px clamp(16px,5vw,45px) 30px;padding:clamp(20px,4vw,32px);background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px #2c26190a;border-radius:5px}.panel-label{color:#92703b;margin-bottom:18px}.panel label:not(.btn){display:block;margin:17px 0 6px;font-weight:700;font-size:13px}.panel input:not([type=checkbox]):not([type=file]),.panel select,.panel textarea{display:block;width:100%;background:#fdfbf6;border:1px solid #cfc5b5;border-radius:4px;padding:12px;color:var(--ink);min-height:47px}.panel textarea{resize:vertical}.panel input:focus,.panel select:focus,.panel textarea:focus{outline:2px solid #bb95568c;outline-offset:1px}.exercise-description{font-size:13px;color:var(--muted);margin:9px 0}.text-button{padding:8px 0;border:0;background:none;color:#8c652f;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px}.subpanel{background:#f9f5ed;border:1px solid var(--line);padding:16px;margin:10px 0 20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.options{display:flex;gap:18px;flex-wrap:wrap;margin-top:15px}.options label{font-weight:500!important}.options input{accent-color:var(--navy)}.workout-preview{margin:18px 0 0;padding:13px;background:#f4efe4;border-left:3px solid var(--gold);font-size:13px}.hint{font-size:12px;color:var(--muted)}.hidden{display:none!important}.workout-active{text-align:center;padding:55px 20px 65px}.workout-active h2{font:600 clamp(34px,7vw,58px) 'Cormorant Garamond',Georgia,serif;margin:8px 0 25px}.round-label{font-size:13px;font-weight:700;letter-spacing:.18em;color:#8d6c3c}.big-timer{font:500 clamp(90px,20vw,180px)/1 'Cormorant Garamond',Georgia,serif;font-variant-numeric:tabular-nums;color:var(--navy);margin:20px 0}.timer-track{background:#e8dfd2;max-width:550px}.timer-track>div{background:var(--gold)}.rep-callout{font:600 26px 'Cormorant Garamond',Georgia,serif;color:#89642e}.timer-message{font-size:13px;color:var(--muted)}.center{text-align:center;justify-content:center}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.summary-grid>div{padding:12px;background:#f8f3e9}.summary-grid strong{display:block;font-size:22px;color:var(--navy)}.summary-grid span{font-size:11px;color:var(--muted)}.optional{font-weight:400;color:#8c8c88}.autosave{font-size:12px;color:var(--sage)}blockquote{margin:25px 0 0;border-top:1px solid var(--line);padding-top:20px;font:italic 22px 'Cormorant Garamond',Georgia,serif;color:#8b6c3c}blockquote cite{display:block;font:11px 'DM Sans',Arial,sans-serif;margin-top:6px}.history-item{padding:18px 0;border-bottom:1px solid var(--line)}.history-item:last-child{border:0}.history-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.history-item h3{font:600 24px 'Cormorant Garamond',Georgia,serif;margin:0}.history-item p{font-size:12px;color:var(--muted);margin:6px 0}.history-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.history-actions button{background:transparent;border:1px solid var(--line);padding:6px 11px;font-size:12px;border-radius:3px;color:#77592f}.status-tag{font-size:10px;letter-spacing:.07em;color:var(--sage);text-transform:uppercase}.backup-panel p{font-size:13px;color:var(--muted)}.file-label{display:inline-flex;align-items:center;cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.empty{color:var(--muted);font-size:14px;padding:15px 0}footer{text-align:center;background:var(--navy);color:var(--gold-light);font-size:11px;letter-spacing:.18em;padding:30px}footer span{letter-spacing:.07em;color:#c4c6c9;font:italic 16px 'Cormorant Garamond',Georgia,serif}@media(max-width:520px){.masthead{gap:10px}.brandmark{width:40px;height:40px;font-size:22px}.masthead h1{font-size:28px}.eyebrow{font-size:8px}.version{font-size:9px}.prayer-sanctuary{min-height:760px;background-size:auto,125% auto}.prayer-card{min-height:300px}.form-grid{grid-template-columns:1fr 1fr}.btn{padding:11px 14px}.big-timer{font-size:clamp(76px,20vw,110px)}}
+
+/* V1.1 sanctuary and interaction refinements */
+.prayer-sanctuary{background:linear-gradient(180deg,rgba(7,16,32,.23) 0%,rgba(7,16,32,.43) 42%,rgba(7,16,32,.76) 100%),url('assets/Most20Church2012.webp') center center/cover no-repeat;min-height:790px}
+.sanctuary-overlay{padding-top:62px}.prayer-sanctuary h2{font-size:clamp(40px,7vw,64px)}
+.prayer-card{background:rgba(14,27,46,.73);border:1px solid rgba(232,207,153,.62);border-radius:7px;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.prayer-text{font-size:clamp(20px,3vw,27px);color:#fffaf0}.prayer-navigation{display:flex;justify-content:center;gap:10px;margin:0 auto 16px}.prayer-navigation .btn{min-height:38px;padding:8px 16px}
+.review-exercise{font:600 28px 'Cormorant Garamond',Georgia,serif;color:var(--navy);margin:0 0 12px}
+.sanctuary-dialog{max-width:min(420px,calc(100vw - 30px));border:1px solid var(--gold);border-radius:7px;background:#fffdf8;color:var(--ink);padding:28px;box-shadow:0 20px 70px #0008}.sanctuary-dialog::backdrop{background:#0d192bc7}.sanctuary-dialog h2{font:600 33px 'Cormorant Garamond',Georgia,serif;margin:0}.sanctuary-dialog p{font-size:14px}
+@media(max-width:520px){.prayer-sanctuary{background-size:cover;background-position:48% center;min-height:790px}.sanctuary-overlay{padding-top:48px}.prayer-card{background:rgba(14,27,46,.82);min-height:240px}.prayer-text{font-size:clamp(20px,5.5vw,24px)}}
+
+/* V1.3: constrain native date controls within mobile Journal panel. */
+.panel{min-width:0;}
+.panel input[type="date"]{box-sizing:border-box;display:block;width:100%;max-width:100%;min-width:0;}
+@media(max-width:520px){
+  #view-journal .panel{min-width:0;}
+  #reflectionDate{width:100%;max-width:100%;min-width:0;min-height:47px;-webkit-appearance:none;appearance:none;}
+  #reflectionDate::-webkit-date-and-time-value{min-width:0;text-align:left;}
+}
+
+/* V1.4 Prayer & Scripture */
+.prayer-library-bar{display:flex;flex-wrap:wrap;gap:7px;padding:14px clamp(15px,4vw,35px);background:var(--navy);border-top:1px solid #ffffff25}
+.mode-btn{flex:1;min-width:105px;background:transparent;color:#e5d7bd;border:1px solid #bba77d70;border-radius:5px;padding:11px 7px;font-size:12px;letter-spacing:.035em}.mode-btn.selected{background:var(--gold);color:#172438;border-color:var(--gold);font-weight:700}
+.invocation-panel{background:linear-gradient(#102038cc,#102038e8),url('assets/Most20Church2012.webp') center/cover;min-height:630px;color:#f8f0df;padding:clamp(25px,5vw,55px);text-align:center}.invocation-panel h2{font:500 clamp(40px,7vw,65px)/1.05 'Cormorant Garamond',Georgia,serif;margin:14px 0}.invocation-panel h2 i{color:var(--gold-light)}.invocation-line{font:italic 500 clamp(20px,3vw,27px)/1.4 'Cormorant Garamond',Georgia,serif;max-width:620px;margin:15px auto 25px}.invocation-choices{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.invocation-choice{color:#fff;background:#ffffff12;border:1px solid #ffffff50;border-radius:5px;padding:11px 17px;text-align:left;min-width:205px}.invocation-choice.selected{border-color:var(--gold-light);background:#bb955638}.invocation-choice span{display:block;font-size:10px;color:#e8d9bf}.invocation-text{margin:24px auto 12px;max-width:680px;padding:24px clamp(15px,4vw,32px);background:#0b182ad9;border:1px solid #bb95568c;border-radius:5px}.invocation-text h3{font:600 29px 'Cormorant Garamond',Georgia,serif;color:var(--gold-light);margin:0 0 12px}.invocation-text p{font:20px/1.5 'Cormorant Garamond',Georgia,serif;white-space:pre-line;margin:0 0 15px}.invocation-text small{font-size:11px;color:#d3c3a6}.invocation-hint{font-size:12px;color:#e1d6c4}.invocation-actions{justify-content:center;margin-top:18px}
+.library-panel{padding:clamp(20px,4vw,40px);background:var(--cream)}.library-panel h2{font:500 clamp(37px,6vw,56px)/1.1 'Cormorant Garamond',Georgia,serif;margin:8px 0}.library-panel h2 i{color:#957243}.library-panel>p{color:var(--muted)}.library-filters{display:grid;grid-template-columns:1fr 1fr;gap:7px 14px;margin:20px 0}.library-filters label{font-size:12px;font-weight:600}.library-filters input,.library-filters select{min-width:0;width:100%;border:1px solid var(--line);border-radius:4px;padding:12px;background:white}.library-count{font-size:12px}.library-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}.library-item{text-align:left;background:#faf7f0;border:1px solid var(--line);border-radius:5px;padding:14px;min-height:104px;display:flex;flex-direction:column;gap:5px;color:var(--ink)}.library-item.active{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.library-item small{font-size:10px;letter-spacing:.14em;color:#917145;text-transform:uppercase}.library-item strong{font:600 23px/1.1 'Cormorant Garamond',Georgia,serif}.library-item span{font-size:12px;color:var(--muted)}.library-detail{margin-top:22px;background:#f5eee2;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:5px;padding:clamp(20px,4vw,36px)}.library-detail h3{font:600 clamp(32px,5vw,42px)/1.1 'Cormorant Garamond',Georgia,serif;margin:0 0 5px}.library-scripture{color:#8d6c3f;margin:0 0 23px}.library-detail .panel-label{color:#947245;margin:16px 0 6px}.library-prayer{font:21px/1.55 'Cormorant Garamond',Georgia,serif;white-space:pre-line}.library-question{font:italic 23px/1.4 'Cormorant Garamond',Georgia,serif}.library-link{color:#234663;font-weight:700}.library-further{font-size:13px;color:var(--muted)}.library-detail .button-row{margin-top:22px}
+@media(max-width:520px){.prayer-library-bar{padding:10px}.mode-btn{font-size:11px;min-width:90px}.library-filters{grid-template-columns:1fr}.invocation-panel{padding:25px 15px}.invocation-choice{flex:1;min-width:135px;padding:10px}.invocation-text p{font-size:19px}.library-results{grid-template-columns:repeat(2,minmax(0,1fr))}.library-item{min-width:0;padding:11px}.library-item strong{font-size:21px}.library-detail .button-row{display:flex;flex-wrap:wrap}}
+
+/* V1.5 spiritual preparation; isolated from Prayer, Toil, and Journal layout */
+.prepare-panel{padding:clamp(20px,4vw,42px);background:var(--cream);color:var(--ink)}
+.prepare-panel h2{font:500 clamp(38px,6vw,58px)/1.08 'Cormorant Garamond',Georgia,serif;margin:10px 0}.prepare-panel h2 i{color:#947245}
+.prepare-intro{max-width:680px;color:var(--muted);line-height:1.65}.prepare-sections{display:grid;gap:16px;margin-top:25px}
+.prepare-section{border:1px solid var(--line);border-left:3px solid var(--gold);background:#faf7f0;border-radius:5px;padding:clamp(18px,4vw,29px);min-width:0}
+.prepare-section h3{font:600 clamp(28px,4vw,36px)/1.1 'Cormorant Garamond',Georgia,serif;margin:3px 0 9px}.prepare-section p{line-height:1.55}.prepare-verse{font-size:12px;color:#87683f;letter-spacing:.04em}.prepare-prayer{font:21px/1.55 'Cormorant Garamond',Georgia,serif;white-space:pre-line}.prepare-question{font:italic 21px/1.45 'Cormorant Garamond',Georgia,serif}.prepare-armors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:12px;margin-top:15px}.prepare-armor{padding:17px;background:#f2e9d9;border:1px solid var(--line);border-radius:4px}.prepare-armor h4{margin:0 0 7px;font:600 24px 'Cormorant Garamond',Georgia,serif}.prepare-armor .prepare-prayer{font-size:19px}.prepare-section a{color:#244967;font-weight:600}.prepare-section select{width:100%;max-width:520px;min-width:0;padding:12px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink)}.prepare-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:14px}.prepare-note{font-size:12px;color:var(--muted)}
+
+/* V1.6 · untimed prayer and optional soundscape */
+.heavenly-audio{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:13px 18px;background:#15273d;color:#f5e8d2;border-top:1px solid #c9a46c66}.heavenly-audio strong{display:block;font:600 20px 'Cormorant Garamond',Georgia,serif}.heavenly-audio span{display:block;font-size:11px;color:#d6c9b4}.heavenly-audio label{display:flex;gap:8px;align-items:center;font-size:12px}.heavenly-audio input{width:95px;accent-color:#c9a46c}.heavenly-audio .btn{min-height:37px;padding:8px 14px}.scripture-invocations{max-width:520px;margin:18px auto 0}.scripture-invocations label{display:block;font-size:12px;color:#e8d9bf;margin-bottom:8px}.scripture-invocations select{max-width:100%;width:100%;padding:11px;background:#15263b;color:#fff;border:1px solid #b99560;border-radius:4px}.invocation-scripture-link{color:#e9c98f;font-size:13px}.study-appendix{margin-top:26px;border-top:1px solid #d6c8b1;padding-top:15px}.study-appendix details{margin:10px 0;padding:12px;background:#faf7f0;border:1px solid #d8cbb7;border-radius:5px}.study-appendix summary{cursor:pointer;color:#775b36;font-weight:700}.study-appendix p{font-size:13px;color:#655f57;line-height:1.5}.study-appendix a{display:block;color:#254a68;font-size:13px;padding:6px 0}.prayer-sanctuary{min-height:620px}.prayer-card{min-height:0}.prayer-subtitle{max-width:560px;margin:12px auto 22px}
+
+/* V1.8: single Holy Spirit invocation dropdown; original aesthetic retained */
+.invocation-selector{max-width:560px;margin:22px auto 0;position:relative;text-align:left}
+.invocation-menu-toggle{display:flex;align-items:center;justify-content:space-between;gap:15px;width:100%;padding:15px 19px;border:1px solid #d8b678;border-radius:5px;background:#b9956038;color:#fff4df;font:600 24px 'Cormorant Garamond',Georgia,serif;cursor:pointer}
+.invocation-menu-toggle span{color:#e8cb92;font:22px Georgia,serif}
+.invocation-menu{max-height:355px;overflow-y:auto;background:#102138;border:1px solid #b99560;border-radius:5px;margin-top:5px;box-shadow:0 12px 28px #0007}
+.invocation-menu-group{padding:13px 15px 6px;color:#e8c994;font-size:11px;letter-spacing:.11em;text-transform:uppercase}
+.invocation-menu-option{display:block;width:100%;border:0;border-top:1px solid #ffffff16;background:transparent;color:#fff7e8;padding:11px 15px;text-align:left;font:600 20px 'Cormorant Garamond',Georgia,serif;cursor:pointer}
+.invocation-menu-option:hover,.invocation-menu-option:focus-visible,.invocation-menu-option[aria-current="true"]{background:#b9956033}
+.invocation-menu-option small{display:block;font:11px system-ui,sans-serif;color:#d8c5a8;margin-top:3px}
+/* V2.0: quiet utility placement and restrained personal/training panels */
+.heavenly-footer{margin:3rem auto .5rem;max-width:760px;padding:.6rem .85rem;opacity:.82;border:1px solid rgba(174,147,96,.22);border-radius:12px;background:transparent;box-shadow:none}
+.heavenly-footer strong{font-size:.84rem;font-weight:500}.heavenly-footer .btn{font-size:.78rem;padding:.4rem .7rem}.heavenly-footer label{font-size:.75rem}
+.personal-walk{margin:1.6rem 0}.personal-walk h3{margin:.3rem 0}.personal-list{display:grid;gap:.75rem;margin-top:1rem}.personal-entry{padding:1rem;border:1px solid rgba(142,115,75,.24);border-radius:10px;background:rgba(255,255,255,.035)}.personal-entry h4{margin:0 0 .4rem}.personal-entry p{white-space:pre-wrap}.personal-entry .button-row{margin-top:.8rem}
+.mode-switch{display:flex;gap:.5rem;justify-content:center;margin:1rem 0}.mode-switch .mode-btn{flex:1;max-width:260px}.traditional-timer{padding:1rem 0;text-align:center}.traditional-timer .big-timer{font-size:clamp(2.2rem,8vw,4.3rem)}
+
+/* VNext integration: navigation and music controls */
+.bible-provider-links{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 18px}
+.bible-provider-links a{display:inline-block;padding:10px 12px;border:1px solid #b99560;border-radius:7px;color:#72552c;background:#faf6ed;font-size:13px;text-decoration:none}
+.heavenly-footer{background:#142238;color:#f3e7d3;opacity:1;border:1px solid #ad8a52;box-shadow:none}
+.heavenly-footer .btn{background:#223951;color:#e9c990;border:1px solid #ad8a52}
+.heavenly-footer input[type=range]{accent-color:#c9a46c}
+.library-category-only #librarySearch,.library-category-only label[for=librarySearch]{display:none!important}
+
+/* Approved page headings and reduced visual clutter */
+.invocation-subtitle{font-family:inherit;font-size:clamp(1.35rem,4vw,2rem);margin:.25rem 0 1rem;color:var(--gold,#b49a62)}
+
+/* Bible reading preferences — compact and consistent with existing forms. */
+.bible-preferences{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1rem;margin:1rem 0;align-items:end}
+.bible-preferences label{font-size:.8rem;letter-spacing:.02em}
+.bible-preferences select{min-width:0;width:100%}
+.bible-preferences .hint{grid-column:1/-1;margin:.15rem 0;font-size:.78rem}
+@media(max-width:560px){.bible-preferences{grid-template-columns:1fr}}
+
+/* Gratitude: dedicated, accessible correspondence view */
+.correspondence-view{margin:1.2rem 0 2rem}.correspondence-view.hidden{display:none}
+.letter-toolbar{display:flex;gap:.65rem;justify-content:space-between;flex-wrap:wrap;margin-bottom:.8rem}
+.byzantine-letter{position:relative;max-width:760px;margin:auto;padding:clamp(1.3rem,5vw,3.5rem);color:#302a20;background:#f8f0dc;border:7px double #aa813a;outline:2px solid #233348;outline-offset:4px;box-shadow:inset 0 0 0 3px #e0c88c,0 12px 28px #07132135;overflow-wrap:anywhere}
+.byzantine-letter:before,.byzantine-letter:after{content:'✝   ❧   ✝';display:block;text-align:center;color:#a07830;letter-spacing:.7rem;font-size:1.1rem}
+.letter-ornament{text-align:center;color:#9d752f;letter-spacing:.45rem;margin:1rem 0}
+.letter-date{text-align:center;font-size:.86rem;letter-spacing:.08em}.byzantine-letter h3{text-align:center;color:#26334a;font-size:clamp(1.5rem,5vw,2.3rem);margin:.7rem 0 1.2rem}
+.letter-goodness{text-align:center;color:#82601e;font-style:italic}.letter-content h4{color:#695021;margin:1.5rem 0 .4rem}.letter-content p{white-space:pre-wrap;line-height:1.7;margin:0}
+@media(max-width:420px){.byzantine-letter{border-width:5px;padding:1.2rem}.letter-toolbar .btn{flex:1}}
+
+/* Shared, restrained music control — no white card/button backgrounds. */
+.heavenly-audio.heavenly-footer{display:flex;gap:10px;align-items:center;justify-content:center;max-width:760px;margin:24px auto 8px;padding:9px 12px;background:#142238!important;color:#e9d7b7;border:1px solid rgba(201,164,108,.38);border-radius:8px;box-shadow:none;opacity:1}
+.heavenly-footer strong{font-size:14px;color:#e9d7b7}
+.heavenly-footer .btn,.heavenly-footer button{background:#1c3048!important;color:#e9c990!important;border:1px solid rgba(201,164,108,.65)!important;min-height:36px;box-shadow:none}
+.heavenly-footer label{color:#e9d7b7;white-space:nowrap}
+.heavenly-footer input[type=range]{width:75px;accent-color:#c9a46c}
+@media(max-width:420px){.heavenly-audio.heavenly-footer{gap:7px;padding:8px}.heavenly-footer strong{font-size:12px}.heavenly-footer label{font-size:11px}.heavenly-footer input[type=range]{width:55px}}
+
+/* Approved My Walk landscape: preserve full composition on narrow screens. */
+.walk-landscape{display:block;width:100%;height:auto;max-height:430px;object-fit:contain;object-position:center;margin:18px 0 8px;border-radius:9px;border:1px solid rgba(201,164,108,.3)}
+@media(max-width:600px){.walk-landscape{max-height:none;margin:14px 0 6px}}
+
+/* Approved art integration: imagery remains subordinate to usable content. */
+.invocation-panel{background:linear-gradient(160deg,#142238,#20344b);min-height:0}
+.shepherd-art{display:block;width:min(100%,430px);height:auto;max-height:600px;object-fit:contain;margin:28px auto 0;border:1px solid #bb95566b;box-shadow:0 14px 35px #050c1966}
+.library-art{display:block;width:min(100%,530px);height:auto;max-height:380px;object-fit:contain;object-position:center;margin:20px auto 26px;border:1px solid #c8ad7e}
+/* The reference art supplies the ornate border only; all correspondence is live text. */
+.byzantine-letter{border:26px solid transparent;border-image-source:url('assets/byzantine-frame-reference.png');border-image-slice:125 140;border-image-width:26px;border-image-repeat:stretch;background:#f8f0dc;outline:1px solid #a78143;outline-offset:0;padding:clamp(18px,4vw,44px)}
+@media(max-width:520px){.shepherd-art{max-height:490px}.library-art{max-height:310px}.byzantine-letter{border-width:16px;border-image-width:16px;padding:17px}}
+
+/* Approved mobile usability and visual corrections */
+main{min-height:0}.app-shell{min-height:0}.view{min-height:0}
+.invocation-panel{padding:30px clamp(18px,4vw,40px) 35px}.invocation-panel h2{margin:10px 0 6px}.invocation-line{max-width:580px;margin:14px auto 20px}.shepherd-art{width:min(100%,360px);max-height:490px;margin:25px auto 0;object-fit:contain}
+.library-art{width:100%;max-width:650px;max-height:300px;object-fit:cover;object-position:center 53%;border-radius:6px}
+.walk-landscape{max-height:340px;object-fit:cover;object-position:center}
+.scripture-navigation{margin:22px 0;padding:clamp(18px,3vw,30px);background:#f7f1e6;border:1px solid #d7c5a7;border-radius:8px;box-shadow:0 5px 20px #1422380b}
+.scripture-navigation h3{font:600 clamp(28px,4vw,38px) 'Cormorant Garamond',Georgia,serif;margin:5px 0}.scripture-navigation p{font-size:14px;color:#5d6770;margin:0 0 16px}
+.scripture-navigation .library-filters{display:block;margin:12px 0 20px}.scripture-navigation label{display:block;font-size:13px;font-weight:700;margin:0 0 7px;color:#23374c}.scripture-navigation select{width:100%;min-height:46px;border:1px solid #c7ae85;background:#fffdfa;color:#182b42;padding:10px 12px;border-radius:5px}
+.reader-kicker{margin:22px 0 10px}.scripture-navigation .bible-preferences{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:0}.scripture-navigation .bible-provider-links{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0}.bible-provider-links a{flex:1;min-width:145px;text-align:center;background:#142238;color:#f5e5c4!important;border:1px solid #ad8a52;border-radius:5px;padding:12px 16px;text-decoration:none;font-size:13px;font-weight:700}
+.library-results{display:block}.scripture-category{border:1px solid #d9cbb5;border-radius:6px;margin:12px 0;background:#fffcf7;overflow:hidden}.scripture-category summary{cursor:pointer;padding:16px 18px;color:#20344b;font-weight:700;list-style-position:inside;min-height:50px}.scripture-category[open] summary{border-bottom:1px solid #e4d9c7;background:#f7f0e5}.scripture-category-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;padding:13px}.scripture-category .library-item{min-height:80px}.library-detail:not(.hidden){max-width:740px;margin:24px auto}
+.personal-walk,.gratitude-seek,.view .panel{max-width:800px}.personal-walk{margin:24px auto}.personal-list .library-item{min-height:84px}.personal-walk .btn{min-height:44px}
+#view-journal>.panel{margin-left:auto;margin-right:auto}.view textarea{min-height:95px}#gratitudeNote{min-height:210px;font-size:16px;line-height:1.7;padding:16px;background:#fffdf9}.goodness-check{margin-top:17px}.settings-drawer{max-width:760px;margin:24px auto 0;padding:0 16px}.settings-drawer>summary{cursor:pointer;color:#7b5d31;text-align:center;font-size:13px;padding:12px;list-style-position:inside}.settings-drawer .backup-panel{margin:8px 0}
+.heavenly-audio.heavenly-footer{max-width:760px;width:calc(100% - 32px);margin:12px auto 0;background:#142238!important;color:#f3e7d3!important;border:1px solid #ad8a52!important;opacity:1!important}.heavenly-footer .btn{background:#213a53!important;color:#f3d6a1!important;border:1px solid #ad8a52!important}.heavenly-footer input[type=range]{accent-color:#c9a46c}
+#view-toil .mode-switch{max-width:800px;margin:auto}#view-toil .mode-btn{min-height:48px;font-size:14px}#view-toil .panel{margin-left:auto;margin-right:auto}#view-toil input,#view-toil select{min-height:44px}#view-toil .button-row .btn{min-height:46px}
+@media(max-width:600px){.masthead{padding:12px 16px}.masthead h1{font-size:26px}.version{font-size:9px}.tabs{padding:0 7px}.tab{min-height:47px;padding:10px 5px;font-size:12px}.prayer-library-bar{gap:5px}.mode-btn{min-height:42px}.invocation-panel{padding:24px 16px 28px}.shepherd-art{max-height:430px;width:min(100%,330px)}.library-art{max-height:235px;object-fit:cover}.walk-landscape{max-height:255px;object-fit:cover}.scripture-navigation{margin:16px 0;padding:17px}.scripture-navigation .bible-preferences{grid-template-columns:1fr}.scripture-category-list{grid-template-columns:1fr}.library-panel{padding:18px 15px}.library-item strong{font-size:23px}.page-intro{padding:26px 18px 10px}.page-intro h2{font-size:44px}.view .panel{margin-left:12px;margin-right:12px;padding:17px}.heavenly-audio.heavenly-footer{gap:8px;flex-wrap:wrap}.heavenly-footer strong{font-size:15px}.heavenly-footer input[type=range]{width:90px}#gratitudeNote{min-height:240px}}
+
+/* ACCEPTANCE FIXES — mobile-first layout; replaces legacy overrides */
+html,body{max-width:100%;overflow-x:clip}
+.app-shell,main,.view,.panel,.library-panel,.scripture-navigation{min-width:0;max-width:100%}
+img{max-width:100%}
+#view-toil .mode-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%;max-width:800px;padding:0 16px;margin:12px auto 16px}
+#view-toil .mode-switch .mode-btn{display:block;width:100%;max-width:none;min-width:0;min-height:50px;margin:0;padding:12px 8px;font-size:15px}
+#view-toil .panel{width:auto;min-width:0}
+#view-toil .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#view-toil input,#view-toil select,#view-toil textarea{width:100%;max-width:100%;min-width:0}
+.library-art{display:block;width:100%;height:clamp(175px,35vw,285px);max-width:100%;max-height:none;object-fit:cover;object-position:center 48%;background:#152238;margin:20px auto;border:0;border-radius:8px}
+.shepherd-art{display:block;width:min(100%,370px);height:auto;max-height:none;object-fit:contain;margin:22px auto 0}
+.walk-landscape{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:16px auto;border:0}
+#libraryBrowse{margin-top:24px}#libraryBrowse.hidden{display:none!important}
+.scripture-category-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px}
+.scripture-category:not([open]) .scripture-category-list{display:none!important}
+.scripture-category summary{font-size:16px;line-height:1.45;list-style:revert}
+.library-detail{max-width:780px;margin:22px auto;padding:clamp(18px,4vw,32px);border:1px solid #d9cbb5;background:#fffdf8}
+.library-detail.hidden{display:none!important}
+.library-panel.reading-open>.library-art,.library-panel.reading-open>.scripture-navigation{display:none}
+#view-journal .legacy-gratitude-fields{display:none!important}
+#gratitudeNote{min-height:220px}
+.settings-drawer{max-width:850px;margin:18px auto;padding:0 16px}
+.settings-drawer summary{cursor:pointer;min-height:44px;padding:12px 16px;color:#f1e1c3;background:#142238;border:1px solid #bb9556;border-radius:5px}
+.weekly-summary{color:#71552e;font-size:14px;margin:12px 0}
+@media(max-width:600px){
+ .library-panel{padding:20px 16px}
+ .library-art{height:200px;object-fit:cover;object-position:center 42%}
+ .walk-landscape{height:auto;max-height:none;object-fit:contain}
+ .shepherd-art{width:min(100%,300px)}
+ .scripture-category-list{grid-template-columns:1fr}
+ .scripture-navigation .bible-preferences{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .scripture-navigation .bible-preferences select{width:100%;min-width:0}
+ #view-toil .mode-switch{padding:0 12px}
+ #view-toil .mode-switch .mode-btn{font-size:15px}
+ #view-toil .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .heavenly-audio.heavenly-footer{width:calc(100% - 24px)}
+ .prayer-library-bar .mode-btn{min-width:0}
+}
+@media(max-width:360px){.scripture-navigation .bible-preferences{grid-template-columns:1fr}#view-toil .form-grid{grid-template-columns:1fr}}
+
+/* ART DIRECTION — approved artwork is part of the page atmosphere, never a framed card. */
+/* Draw Near: the original portrait is intact; its perimeter dissolves into the sanctuary navy. */
+.invocation-panel{background:radial-gradient(ellipse at 50% 68%,#24364b 0%,#17283d 52%,#142238 100%);overflow:hidden}
+.invocation-panel .shepherd-art{display:block;width:min(82%,420px);height:auto;max-height:none;object-fit:contain;margin:20px auto -4px;border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent;-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 49%,#000 59%,transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 49%,#000 59%,transparent 100%)}
+/* The Word: immersive, softly blended library panorama, transitioning to the ivory study area. */
+.library-panel{overflow:hidden}
+.library-panel>.library-art{display:block;width:calc(100% + 2 * clamp(20px,4vw,40px));max-width:none;height:clamp(260px,42vw,430px);margin:16px calc(-1 * clamp(20px,4vw,40px)) -8px;border:0!important;border-radius:0!important;box-shadow:none!important;object-fit:cover;object-position:50% 52%;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 12%,#000 69%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0%,#000 12%,#000 69%,transparent 100%)}
+/* My Walk: a broad landscape fading into the page, with the bench and path left intact. */
+.prepare-panel{overflow:hidden}
+.prepare-panel>.walk-landscape{display:block;width:calc(100% + 2 * clamp(20px,4vw,42px));max-width:none;height:auto;max-height:none;margin:12px calc(-1 * clamp(20px,4vw,42px)) -4px;border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;object-fit:contain;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 9%,#000 76%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0%,#000 9%,#000 76%,transparent 100%)}
+@media(max-width:600px){
+ .invocation-panel .shepherd-art{width:min(90%,345px);margin:18px auto -3px}
+ .library-panel>.library-art{width:calc(100% + 32px);height:clamp(240px,80vw,365px);margin:12px -16px -8px;object-position:50% 48%}
+ .prepare-panel>.walk-landscape{width:calc(100% + 40px);margin:10px -20px -3px;height:auto;max-height:none}
+}
+@media(prefers-reduced-motion:reduce){.invocation-panel .shepherd-art,.library-panel>.library-art,.prepare-panel>.walk-landscape{transition:none}}
+
+/* FINAL ART CONSISTENCY PASS — shared, edge-free presentation */
+.invocation-panel{background:radial-gradient(ellipse 65% 52% at 50% 70%,#263951 0%,#192b41 57%,#142238 100%);padding-bottom:clamp(28px,5vw,48px)}
+.invocation-panel h2{font-size:clamp(44px,7.2vw,70px);letter-spacing:.015em;margin:12px 0 5px}
+.invocation-panel .invocation-subtitle{margin:0 auto 12px;color:#d3a758;font-size:clamp(21px,3.5vw,29px)}
+.invocation-panel .invocation-line{max-width:520px;margin:12px auto 22px;line-height:1.48}
+.invocation-panel .invocation-selector{position:relative;z-index:2}
+.invocation-panel .shepherd-art{width:min(88%,460px);margin:24px auto -14px;-webkit-mask-image:radial-gradient(ellipse 76% 79% at 50% 47%,#000 48%,rgba(0,0,0,.94) 65%,transparent 99%);mask-image:radial-gradient(ellipse 76% 79% at 50% 47%,#000 48%,rgba(0,0,0,.94) 65%,transparent 99%)}
+/* Both Scripture sections use the same visual rhythm: full-bleed image, ivory fade, then content. */
+.library-panel>.library-art,.prepare-panel>.walk-landscape{border:0!important;border-radius:0!important;box-shadow:none!important;outline:0!important;max-width:none;display:block;width:100%;margin:18px auto 0;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 78%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0%,#000 10%,#000 78%,transparent 100%)}
+.library-panel>.library-art{height:clamp(220px,38vw,360px);object-fit:cover;object-position:center 50%}
+.prepare-panel>.walk-landscape{height:clamp(220px,38vw,360px);object-fit:cover;object-position:center 52%}
+.library-panel>.scripture-navigation{margin-top:0}
+.prepare-panel>.personal-walk{margin-top:0}
+@media(max-width:600px){
+ .invocation-panel{padding:26px 17px 35px}
+ .invocation-panel .shepherd-art{width:min(96%,390px);margin:20px auto -10px}
+ .library-panel>.library-art,.prepare-panel>.walk-landscape{width:100%;height:clamp(195px,57vw,290px);margin:15px auto 0}
+ .library-panel>.library-art{object-position:50% 48%}
+ .prepare-panel>.walk-landscape{object-position:42% 52%}
+}
+
+
+/* Scripture invitations: mobile-first, accessible, non-destructive disclosure */
+.scripture-invitation{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.38rem;width:min(100%,680px);margin:1.2rem auto 1.45rem;padding:.8rem 1.1rem;background:linear-gradient(135deg,#102037,#1c2f46);border:1px solid #c49a52;border-radius:3px;color:#f5dfae;box-shadow:0 0 0 3px rgba(12,28,47,.55),0 8px 30px rgba(0,0,0,.14);cursor:pointer;text-align:center;white-space:normal;line-height:1.4;min-height:66px}
+.scripture-invitation:hover,.scripture-invitation:focus-visible{border-color:#f0ce85;background:#213651;outline-offset:4px}
+.invitation-quote{font-family:Georgia,serif;font-size:clamp(.91rem,2.3vw,1.14rem);font-style:italic;color:#f7e6c2}
+.invitation-source{font-size:.75rem;letter-spacing:.08em;color:#dfb66d}
+.invitation-cue{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:#e3c995}
+.invitation-content[hidden]{display:none!important}
+.invitation-content{width:100%;animation:sanctuaryReveal .25s ease-out}
+@keyframes sanctuaryReveal{from{opacity:.3;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+/* Maintain imagery as the initial experience without covering it with forms */
+#invocationPanel .shepherd-art{display:block;margin:1rem auto;max-width:min(100%,390px);height:auto;object-fit:contain}
+#libraryPanel .library-art,#preparePanel .walk-landscape{display:block;width:min(100%,960px);max-width:100%;height:auto;max-height:440px;object-fit:cover;margin:1rem auto 0;border:0}
+#view-toil .scripture-invitation,#view-journal .scripture-invitation{margin-top:2rem}
+#view-toil .invitation-content,#view-journal .invitation-content{max-width:960px;margin:auto}
+@media(max-width:600px){.scripture-invitation{width:calc(100% - 20px);padding:.85rem .6rem;min-height:74px}.invitation-quote{font-size:.94rem}#libraryPanel .library-art,#preparePanel .walk-landscape{max-height:300px;object-fit:cover}#invocationPanel .shepherd-art{max-width:min(80vw,310px)}.invitation-content{padding-inline:0}#view-toil .mode-switch{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#view-toil .mode-switch button{min-width:0;width:100%}}
+@media(prefers-reduced-motion:reduce){.invitation-content{animation:none}}
+/* Cathedral architecture, extracted from approved sanctuary visual reference. */
+.app-shell{max-width:1120px}
+.cathedral-scene{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;min-height:640px;padding:clamp(145px,17vw,205px) clamp(100px,17%,205px) 35px!important;margin:0 auto;background:radial-gradient(ellipse at 50% 45%,#263b51,#14263c 60%,#0b1829);color:#f9edda;text-align:center;overflow:hidden}
+.cathedral-scene::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('assets/cathedral-arch-desktop.png') center/100% 100% no-repeat}
+.cathedral-scene::after{content:"";position:absolute;inset:auto 0 0;height:75px;z-index:-1;background:linear-gradient(transparent,#142238)}
+.cathedral-scene>*{position:relative;z-index:1;max-width:100%;flex-shrink:0}
+.cathedral-scene h2,.cathedral-scene .page-intro h2{font:500 clamp(35px,5vw,62px)/1.05 'Cormorant Garamond',Georgia,serif;color:#fff2dd!important;margin:0 0 6px}
+.cathedral-scene .section-kicker{color:#e9c77e!important}
+.cathedral-scene p,.cathedral-scene .prepare-intro,.cathedral-scene .page-intro>p{color:#f4e6d0;max-width:480px;margin:8px auto 14px}
+.cathedral-scene .shepherd-art{width:min(100%,365px)!important;max-height:370px!important;height:auto!important;object-fit:contain!important;margin:8px auto 0!important;filter:drop-shadow(0 0 24px #b68b4528)}
+.cathedral-scene .library-art,.cathedral-scene .walk-landscape{display:block;width:min(100%,580px)!important;max-width:100%!important;height:clamp(170px,25vw,290px)!important;object-fit:cover!important;margin:12px auto 0!important;border:0!important;mask-image:linear-gradient(transparent,#000 10%,#000 78%,transparent)!important;-webkit-mask-image:linear-gradient(transparent,#000 10%,#000 78%,transparent)!important}
+.cathedral-scene .scripture-invitation{width:min(100%,500px);margin:12px auto 0;min-height:68px;background:#10223de8;border:1px solid #d2a759;box-shadow:0 0 0 2px #09172d,0 9px 25px #0006}
+.cathedral-scene .page-intro{padding:0!important;background:transparent!important}
+#invocationPanel{padding:0!important;background:#142238!important;min-height:0!important}
+#libraryPanel,#preparePanel{padding:0!important}
+#libraryPanel>.invitation-content,#preparePanel>.invitation-content{padding:22px clamp(14px,4vw,38px)}
+#view-toil>.cathedral-scene,#view-journal>.cathedral-scene{min-height:370px;padding-top:160px!important;padding-bottom:35px!important}
+#view-toil>.invitation-content,#view-journal>.invitation-content{padding:16px 0}
+@media(max-width:650px){.cathedral-scene{min-height:570px;padding:125px 63px 24px!important}.cathedral-scene::before{background-image:url('assets/cathedral-arch-mobile.png')}.cathedral-scene h2,.cathedral-scene .page-intro h2{font-size:clamp(33px,8vw,47px)}.cathedral-scene .invocation-line{font-size:clamp(17px,4.5vw,22px);line-height:1.3}.cathedral-scene .shepherd-art{width:min(100%,250px)!important;max-height:275px!important}.cathedral-scene .library-art,.cathedral-scene .walk-landscape{height:clamp(165px,44vw,250px)!important}.cathedral-scene .scripture-invitation{padding:8px 6px;width:100%;min-height:65px}.cathedral-scene .invitation-quote{font-size:clamp(12px,3.1vw,16px)}#view-toil>.cathedral-scene,#view-journal>.cathedral-scene{min-height:350px;padding-top:145px!important}}
+@media(max-width:390px){.cathedral-scene{padding-inline:48px!important}.cathedral-scene .shepherd-art{max-height:235px!important}}
+
+/* Draw Near only: architecture sits ABOVE a navy interior, never under a blue overlay.
+   Dedicated frame assets have transparent centers; live text and approved Good Shepherd remain separate. */
+#invocationPanel .cathedral-scene {
+  background:#14263c !important;
+  isolation:isolate;
+}
+#invocationPanel .cathedral-scene::before {
+  background-image:url('assets/draw-near-arch-desktop.png') !important;
+  background-size:100% 100% !important;
+  background-position:center !important;
+  z-index:0 !important;
+  opacity:1 !important;
+}
+#invocationPanel .cathedral-scene::after {display:none !important;}
+#invocationPanel .cathedral-scene > * {position:relative;z-index:1;}
+@media(max-width:650px) {
+ #invocationPanel .cathedral-scene::before {background-image:url('assets/draw-near-arch-mobile.png') !important;}
+}
+
+/* Cathedral layering correction — common to all five sanctuary pages. */
+.cathedral-scene {
+  position:relative!important;
+  isolation:isolate!important;
+  background:#14263c!important;
+  overflow:hidden;
+}
+.cathedral-scene::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url('assets/cathedral-arch-desktop.png') center center / 100% 100% no-repeat!important;
+  z-index:2!important;
+  opacity:1!important;
+  pointer-events:none;
+}
+.cathedral-scene::after {display:none!important;}
+.cathedral-scene > * {position:relative;z-index:3!important;}
+/* Only the approved Good Shepherd painting is retained in the sanctuary. */
+.cathedral-scene .library-art,.cathedral-scene .walk-landscape{display:none!important;}
+#invocationPanel .cathedral-scene::before {
+  background-image:url('assets/draw-near-arch-desktop.png')!important;
+}
+/* Clear, restrained text compositions where photographs were removed. */
+#libraryPanel .cathedral-scene, #preparePanel .cathedral-scene {
+  justify-content:center;
+  gap:clamp(7px,1.5vw,16px);
+}
+#libraryPanel .cathedral-scene h2, #preparePanel .cathedral-scene h2 {margin:0!important;}
+#libraryPanel .cathedral-scene .scripture-invitation,
+#preparePanel .cathedral-scene .scripture-invitation {margin-top:clamp(16px,3vw,28px)!important;}
+@media(max-width:650px){
+ .cathedral-scene::before {background-image:url('assets/cathedral-arch-mobile.png')!important;}
+ #invocationPanel .cathedral-scene::before {background-image:url('assets/draw-near-arch-mobile.png')!important;}
+ #libraryPanel .cathedral-scene,#preparePanel .cathedral-scene{min-height:450px!important;}
+}
+
+/* CLASSIC NAVY & GOLD — overrides all earlier cathedral treatments. */
+:root{--classic-navy:#142238;--classic-gold:#c59b55;--classic-ivory:#fff5e5}
+.app-shell{max-width:1120px!important;background:#142238!important}
+.cathedral-scene{min-height:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;padding:clamp(30px,5vw,65px) 20px 34px!important;background:#142238!important;overflow:visible!important;color:var(--classic-ivory)!important}
+.cathedral-scene::before,.cathedral-scene::after{display:none!important;content:none!important;background:none!important}
+.cathedral-scene h2,.cathedral-scene .page-intro h2{color:var(--classic-ivory)!important}
+.cathedral-scene p,.cathedral-scene .prepare-intro,.cathedral-scene .invocation-line{color:#f8edda!important}
+.cathedral-scene .shepherd-art{display:block!important;width:min(100%,285px)!important;max-height:400px!important;height:auto!important;object-fit:contain!important;margin:16px auto 4px!important;border:0!important}
+.cathedral-scene .library-art,.cathedral-scene .walk-landscape,#libraryPanel .library-art,#preparePanel .walk-landscape{display:none!important}
+#view-toil>.cathedral-scene,#view-journal>.cathedral-scene{min-height:0!important;padding:44px 20px 32px!important}
+#view-toil .page-intro,#view-journal .page-intro{background:transparent!important;color:var(--classic-ivory)!important;text-align:center!important}
+#view-toil .page-intro p,#view-journal .page-intro p{color:#f4e9d7!important}
+#invocationPanel,#libraryPanel,#preparePanel{background:#142238!important}
+#invocationPanel .invitation-content{max-width:560px!important;margin:8px auto 0!important;padding:0 16px 16px!important;color:var(--classic-ivory)!important}
+#invocationPanel .invocation-selector{width:min(100%,460px);margin:0 auto!important}
+#invocationPanel .invocation-menu-toggle{background:#172b44!important;color:#fff2d9!important;border:1px solid #c59b55!important}
+#invocationPanel .invocation-menu{background:#142238!important;color:#fff4e2!important;border:1px solid #c59b55!important}
+#libraryPanel .cathedral-scene,#preparePanel .cathedral-scene{padding:38px 18px 24px!important;gap:8px!important}
+#libraryPanel>.invitation-content,#preparePanel>.invitation-content{background:#fffaf2!important;padding:24px clamp(14px,4vw,38px)!important}
+#libraryPanel .cathedral-scene .scripture-invitation,#preparePanel .cathedral-scene .scripture-invitation{display:none!important}
+#view-toil>.invitation-content,#view-journal>.invitation-content{background:#fffaf2!important;padding:20px 12px!important}
+#view-toil .scripture-invitation,#view-journal .scripture-invitation{width:min(100%,500px)!important;margin:16px auto 0!important}
+/* Entire footer control zone, not merely the button, is navy. */
+.settings-drawer,.heavenly-footer,.heavenly-audio.heavenly-footer{background:#142238!important;color:#fff2df!important}
+.settings-drawer{max-width:none!important;width:100%!important;margin:0!important;padding:14px 16px 2px!important}
+.settings-drawer>summary{max-width:760px;margin:auto;color:#f5dfb4!important;border-color:#c59b55!important}
+.heavenly-audio.heavenly-footer{max-width:none!important;width:100%!important;margin:0!important;padding:12px 16px 16px!important;border:0!important;border-radius:0!important;display:flex;align-items:center;justify-content:center;gap:12px}
+.heavenly-footer strong,.heavenly-footer label{color:#fff3dd!important}
+footer{border-top:1px solid #c59b55!important}
+#wordAddPersonalPassage{min-height:46px;margin:10px 0;background:#142238;color:#fff3de;border:1px solid #c59b55}
+#view-toil .mode-switch{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%!important;max-width:760px!important}
+#view-toil .mode-switch button{min-width:0!important;width:100%!important}
+@media(max-width:650px){.cathedral-scene{padding:30px 16px 22px!important}.cathedral-scene .shepherd-art{width:min(74vw,260px)!important;max-height:330px!important}#view-toil>.cathedral-scene,#view-journal>.cathedral-scene{padding:30px 16px 20px!important}.heavenly-audio.heavenly-footer{flex-wrap:wrap!important;gap:9px!important}.settings-drawer{padding-inline:12px!important}}
+
+/* Consistent classic navy and antique gold; no cathedral imagery. */
+#view-prayer, #view-toil, #view-journal {background:#142238!important;}
+#view-prayer .invocation-panel {overflow:visible!important;}
+#invocationPanel .invocation-selector {position:relative;z-index:20;}
+#invocationPanel .invocation-menu {position:relative!important;z-index:21!important;max-height:min(54vh,420px)!important;overflow-y:auto!important;overscroll-behavior:contain;}
+#invocationPanel .invitation-content {overflow:visible!important;}
+#invocationPanel .shepherd-art {position:relative;z-index:1;}
+.heavenly-audio.heavenly-footer, .settings-drawer, .heavenly-footer {background:#142238!important;}
+#view-toil .page-intro,#view-journal .page-intro{color:#fff5e5!important;}
+#view-toil .page-intro h2,#view-journal .page-intro h2{color:#fff5e5!important;}
+#wordAddPersonalPassage{display:block;width:100%;font-weight:700;letter-spacing:.03em;}
+@media(max-width:650px){
+ #invocationPanel .invocation-menu{max-height:45vh!important;}
+ #view-toil .mode-switch{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+ #view-toil .mode-switch button{min-width:0!important;}
+ .heavenly-audio.heavenly-footer{width:100%!important;max-width:100%!important;}
+}
+
+/* V4: Word heading and intro must contrast against the navy background. */
+#libraryPanel > h2,#libraryPanel h2,#libraryPanel > .section-kicker,#libraryPanel > p,#libraryPanel .prepare-intro {color:#fff5e5!important;opacity:1!important;text-shadow:none!important;}
+#libraryPanel > .section-kicker {color:#d9b16b!important;}
+#libraryPanel > p {color:#e8dcc8!important;}
+#libraryPanel .scripture-navigation h3 {color:#142238!important;}
+
+/* V5: enforce the classic, high-contrast headings in both Scripture views. */
+#libraryPanel > h2, #preparePanel > h2,
+#libraryPanel .cathedral-scene h2, #preparePanel .cathedral-scene h2,
+#libraryPanel > .section-kicker, #preparePanel > .section-kicker {color:#fff5e5!important;opacity:1!important;text-shadow:none!important;}
+#libraryPanel > p, #preparePanel > p, #preparePanel .prepare-intro,
+#libraryPanel .cathedral-scene p, #preparePanel .cathedral-scene p {color:#f0e3cf!important;opacity:1!important;}
+#libraryPanel > .section-kicker, #preparePanel > .section-kicker {color:#d6ad64!important;}
+#invocationPanel h2 {font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:600!important;letter-spacing:.025em!important;color:#fff7e8!important;line-height:1.05!important;}
+#invocationPanel .invocation-subtitle {font-family:'Cormorant Garamond',Georgia,serif!important;font-weight:600!important;font-style:italic!important;letter-spacing:.01em!important;color:#e2b563!important;}
+#invocationPanel .invocation-line {font-family:'Cormorant Garamond',Georgia,serif!important;color:#fff1db!important;}
+#view-toil > .invitation-content, #view-journal > .invitation-content {margin-top:18px!important;}
+#view-toil .scripture-invitation, #view-journal .scripture-invitation {margin-bottom:0!important;}
+.scripture-picker select {width:100%;min-height:42px;border:1px solid #c7a56f;border-radius:3px;background:#fffdfa;color:#17283d;padding:9px;}
+.scripture-picker select:disabled {opacity:.65;}
+@media(max-width:650px){#view-toil > .invitation-content,#view-journal > .invitation-content{margin-top:14px!important;}}
+
+/* V6: breathing room around Scripture page titles, without moving controls. */
+#libraryPanel > .section-kicker, #libraryPanel > h2, #libraryPanel > p,
+#preparePanel > .section-kicker, #preparePanel > h2, #preparePanel > .prepare-intro {margin-left:clamp(18px,4vw,48px)!important;margin-right:clamp(18px,4vw,48px)!important;}
+#libraryPanel > .section-kicker, #preparePanel > .section-kicker {padding-top:16px!important;}
+#libraryPanel > h2, #preparePanel > h2 {line-height:1.12!important;}
+#libraryPanel > p, #preparePanel > .prepare-intro {padding-bottom:10px!important;}
+#scriptureBook {width:100%;min-height:46px;background:#fffdfa;color:#17283d;border:1px solid #c7a56f;border-radius:3px;padding:10px;}
+@media(max-width:600px){#libraryPanel > .section-kicker,#libraryPanel > h2,#libraryPanel > p,#preparePanel > .section-kicker,#preparePanel > h2,#preparePanel > .prepare-intro {margin-left:20px!important;margin-right:20px!important;}}
+
+/* V7: precise alignment and consistent Scripture introduction spacing */
+#view-toil > .page-intro, #view-toil .page-intro {display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;width:100%!important;margin-inline:auto!important;}
+#view-toil .page-intro > p {text-align:center!important;margin:10px auto 0!important;max-width:min(90%,620px)!important;width:100%!important;}
+#view-toil .page-intro > h2 {text-align:center!important;margin-left:auto!important;margin-right:auto!important;}
+#view-toil .page-intro > .section-kicker {text-align:center!important;}
+#scriptureBook {appearance:auto!important;cursor:pointer!important;}
+@media(max-width:650px){#view-toil .page-intro > p {max-width:calc(100% - 32px)!important;padding-inline:8px!important;}}
+
+/* V10: leather treatment applies to page backgrounds only. Headers, navigation, settings, music and footer remain solid navy. */
+#view-prayer,#view-toil,#view-journal{background-color:#142238!important;background-image:url("assets/leather-crosses.svg")!important;background-size:190px 190px!important;background-repeat:repeat!important;}
+#invocationPanel,#libraryPanel,#preparePanel{background:transparent!important;}
+#view-toil>.page-intro,#view-journal>.page-intro{background:transparent!important;}
+#invocationPanel .shepherd-art{border:5px ridge #ba8a3f!important;outline:1px solid #e8c784!important;outline-offset:3px!important;box-shadow:0 0 0 7px #15263b,0 15px 32px #0008!important;mask-image:none!important;-webkit-mask-image:none!important;margin:24px auto 22px!important;}
+#invocationPanel .scripture-invitation{margin:18px auto 20px!important;width:min(100%,680px)!important;position:relative;z-index:2;}
+#invocationPanel .invitation-content{margin-top:16px!important;padding-top:4px!important;}
+#invocationPanel .invocation-menu-toggle{display:none!important;}
+#invocationPanel .invocation-selector{width:min(100%,540px)!important;}
+#invocationPanel .invocation-menu{max-height:min(55vh,420px)!important;overflow-y:auto!important;position:relative!important;z-index:10!important;}
+.nav-sacred-icon{width:19px;height:19px;fill:none;stroke:#c59b55;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:middle;}
+.tabs .tab{display:flex;align-items:center;justify-content:center;gap:8px;}
+@media(max-width:600px){.nav-sacred-icon{width:17px;height:17px}#invocationPanel .shepherd-art{margin:22px auto 20px!important}#invocationPanel .scripture-invitation{width:calc(100% - 24px)!important;margin-top:16px!important}}
+
+/* V10: Keep the leather visible even on the Word and My Walk content wrappers. */
+#view-prayer #libraryPanel,#view-prayer #preparePanel{background-color:transparent!important;}
+
+/* V14: discoverable optional study resources; preserve approved visual language. */
+.deeper-study-hub{margin:22px 0 26px;padding:clamp(16px,3vw,24px);background:#fffdf8;border:1px solid #d9cbb5;border-radius:6px;color:#20344b}
+.deeper-study-hub h3{color:#142238;margin:6px 0 10px}
+.deeper-study-hub p{line-height:1.55}
+.deeper-study-hub details{margin:12px 0;border:1px solid #d9cbb5;border-radius:5px;background:#fffaf1;overflow:hidden}
+.deeper-study-hub summary{cursor:pointer;padding:15px 16px;font-weight:700;min-height:48px;color:#142238}
+.deeper-study-hub details[open] summary{border-bottom:1px solid #d9cbb5}
+.deeper-study-hub details>p{margin:12px 16px}
+.study-resource-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:9px;padding:0 16px 16px}
+.study-resource-links a{display:block;border:1px solid #ad8a52;border-radius:5px;padding:11px 12px;color:#142238!important;background:#fff;text-decoration:none;overflow-wrap:anywhere}
+.study-resource-links a:hover,.study-resource-links a:focus-visible{background:#f4e9d6;outline-offset:2px}
+.deeper-study-hub .study-hub-note{font-size:.9rem;margin-bottom:0}
+
+/* V14.1: restrained God's Goodness stationery; crosses only, no ornate glyphs. */
+.byzantine-letter{
+  border:3px solid #b78c49!important;border-image:none!important;
+  outline:1px solid #e6d09b!important;outline-offset:-9px!important;
+  box-shadow:0 0 0 5px #142238,0 0 0 7px #b78c49,0 12px 28px #07132155!important;
+  background:#f8f0dc!important;
+  padding:clamp(25px,5vw,50px)!important;
+}
+.byzantine-letter::before,.byzantine-letter::after{content:'✝'!important;display:block;text-align:center;letter-spacing:0!important;font-size:1.1rem;color:#9d752f;margin:.4rem 0!important}
+.byzantine-letter .letter-ornament{letter-spacing:0!important;font-size:1.1rem;margin:1rem 0!important}
+@media(max-width:520px){.byzantine-letter{padding:25px 20px!important}}
