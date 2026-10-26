@@ -1,0 +1,15 @@
+{
+  "build": "02",
+  "scope": "read-only view of existing reader annotations in My Studies and Scripture Connections",
+  "reader_and_legacy_files_byte_identical_to_build_01": true,
+  "preserved_files_checked": 145,
+  "scripture_books_count": 81,
+  "javascript_syntax": "pass",
+  "zip_crc": "pending",
+  "browser_mobile_tests": "not_run",
+  "scripture_provenance": "not_independently_verified",
+  "security_audit": "pending",
+  "shared_library_write_integration": "not_implemented",
+  "temple_integration": "not_implemented",
+  "note": "Read-only reader library view; no user-data writes from the new shell. Current reader continues to own its data."
+}
